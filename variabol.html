@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <h2>variables المتغيرات</h2>
+    <p>المتغيرات بشكل مبسط هي مخازن أو حوامل للقيم مخزنة في الذاكرة بحيث كل موقع في الذاكرة له عنوان وقيمة خاصة </p>
+    <p>بالعنوان وكل متغير يحمل قيمة خاصة به وللمتغيرات أهمية لا يمكن الأستغناء عنها في العمليات البرمجية .</p>
+    <p>Syntax</p>
+    <p class="code "><span class="data_type ">Type</span><span class="variabol">variable</span> = value;</p>
+    <p>نوع_المتغير اسم_المتغير = قيمة_المتغير</p>
+    <p>أنواع المتغيرات</p>
+    <p>خاص بتحميل القيم الصحيحة فقط int النوع</p>
+    <p class="code "><span class="data_type ">int</span><span class="variabol"> myNum</span> = 15;</p>
+    <p> خاص بتحميل القيم العشرية فقط Doubleالنوع</p>
+    <p class="code "><span class="data_type ">double</span><span class="variabol"> myFloatNum</span> = 5.99;</p>
+    <p> خاص بتحميل القيم النصية Stringالنوع</p>
+    <p class="code "> <span class="data_type ">string</span> <span class="variabol"> myText</span> = "Hello";</p>
+    <p> أو غيرها من الحروف والرموز والارقام B او حرف Aيحمل رمز واحد فقط مثلا حرف Charالنوع</p>
+    <p class="code "><span class="data_type ">char</span> <span class="variabol"> myLetter</span> = 'D';</p>
+    <p>وتعني صحيحة أو خاطئة true or false يحمل فقط قيمتين Booleanالنوع</p>
+    <div class="code ">
+        <p><span class="data_type ">bool</span> <span class="variabol"> myBoolean1</span> = true;</p>
+        <p><span class="data_type ">bool</span> <span class="variabol"> myBoolean2</span> = false;</p>
+    </div>
+    <p>طرق تهيئة المتغيرات</p>
+    <p>تعريف متغير واعطاء القيمة بشكل مباشر :</p>
+    <p class="code "><span class="data_type ">int</span> <span class="variabol">myNum</span> = 15;</p>
+    <p>تعريف متغير واعطاء القيمة بشكل غير مباشر :</p>
+    <div class="code ">
+        <p><span class="data_type ">int</span> <span class="variabol"> myNum</span> ;</p>
+        <p> <span class="variabol">myNum</span> = 15;</p>
+    </div>
+    <p>تعريف متغير واعطاء القيمة بشكل مباشر ومن ثم تغيير القيمة :</p>
+    <p class="code "><span class="data_type ">int</span> <span class="variabol"> myNum</span> = 15; // myNum is 15</p>
+    <p class="code "> <span class="variabol">myNum</span> = 10; // Now myNum is 10</p>
+    <p>الدمج بين القيم في المتغيرات</p>
+    <p>
+        << الدمج في الطباعة يتم الدمج بين النصوص والقيم الصحيحة باستخدام العلامة </p>
+            <div class="code ">
+                <p>#<span class="data_type ">include</span>
+                    <<span>iostream></p>
+                <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+                <p><span class="data_type ">int</span> main(){</p>
+                <p> <span class="data_type ">string </span> <span class="variabol"> myName </span>= "omar"</span>;</p>
+                <p> <span class="data_type ">cout</span>
+                    << <span class="text">"myName is :"</span>
+                        <<<span>myName
+                            <<<span>endl;</p>
+                <p> <span class="data_type ">int</span> <span class="variabol">myAge</span> = 25;</p>
+                <p><span class="data_type ">cout</span>
+                    <<<span class="text"> "myAge is :"</span>
+                        <<<span>myAge
+                            <<<span>endl;</p>
+                <p> <span class="data_type ">return</span> 0;</p>
+                <p>}</p>
+            </div>
+            <p>Output :</p>
+            <div class="code ">
+                <p>myName is :Ahmed</p>
+                <p>myAge is :25</p>
+            </div>
+            <p>الدمج في المتغيرات يتم الدمج بين بين المتغيرات باستخدام العلامة+ , وللتنبيه تستخدم العلامة+ للدمج اذا كانت المتغيرات نصوص وتستخدم للجمع اذا كانت قيم صحيحة</p>
+            <div class="code ">
+                <p>#<span class="data_type ">include</span>
+                    <<span>iostream></p>
+                <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+                <p><span class="data_type ">int</span> main(){</p>
+                <p> <span class="data_type ">string </span> <span class="variabol">firstName</span>= "omar"</span>;</p>
+                <p> <span class="data_type ">string </span> <span class="variabol">lastName</span>= "ramadan"</span>;</p>
+                <p> <span class="data_type ">string </span> <span class="variabol">fullName</span>=firstName+lastName; </span>;</p>
+                <p> <span class="data_type ">cout</span>
+                    << <span class="variabol">fullName</span>
+                </p>
+                <p> <span class="data_type ">return</span> 0;</p>
+                <p>}</p>
+            </div>
+            <p>Output :</p>
+            <div class="code ">
+                <p>omar ramadan</p>
+            </div>
+            <p>المتغيرات المتعددة</p>
+            <p>يمكن تعريف اكثر من متغير من نفس النوع في سطر واحد باستخدم الفاصلة</p>
+
+            <div class="code ">
+
+                <p>#<span class="data_type ">include</span>
+                    <<span>iostream></p>
+                <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+                <p><span class="data_type ">int</span> main(){</p>
+                <p>//المتغيرات المتعدد</p>
+                <p> <span class="data_type "> int </span><span class="variabol "> x </span>= 5, <span class="variabol "> y </span> = 6, <span class="variabol "> z </span> = 7;</p>
+                <p><span class="data_type ">cout</span>
+                    << x + y + z;</p>
+                        <p> <span class="data_type ">return</span> 0;</p>
+                        <p>}</p>
+            </div>
+            <p>Output :</p>
+            <div class="code ">
+                <p>18</p>
+            </div>
+            <div>
+                <div class="code ">
+                    <p>#<span class="data_type ">include</span>
+                        <<span>iostream></p>
+                    <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+                    <p><span class="data_type ">int</span> main(){</p>
+                    <p><span class="data_type "> int </span> <span class="variabol "> x </span>, <span class="variabol "> y </span>, <span class="variabol "> z </span>;</p>
+                    <p><span class="variabol ">X </span>=10;</p>
+                    <p><span class="variabol ">Y </span>=20;</p>
+                    <p><span class="variabol ">Z </span>=30;</p>
+                    <p><span class="data_type ">cout</span>
+                        << x + y + z;</p>
+                            <p> <span class="data_type ">return</span> 0;</p>
+                            <p>}</p>
+                </div>
+            </div>
+            <p>Output :</p>
+            <div class="code ">
+                <p>60</p>
+            </div>
+            <p>Constants الثوابت</p>
+            <p>فهنا لا يمكن تغيير قيمة هذا المتغير لاحقاً اي ان المتغير سيصبح للقراءة فقطconst عند تعريف متغير من نوع ثابت </p>
+            <div class="code ">
+                <p>#<span class="data_type ">include</span>
+                    <<span>iostream></p>
+                <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+                <p><span class="data_type ">int</span> main(){</p>
+                <p><span class="data_type ">const</span> <span class="data_type ">int</span> <span class="variabol ">myAge</span> = 25;</p>
+                <p><span class="variabol ">myAge</span> = 20;</p>
+                <p class="comment">/*</p>
+                <p class="comment"> في هذا المثال سيعطي مترجم اللغة خطأ وسيخبرنا بان</p>
+                <p class="comment">myAge المتغير</p>
+                <p class="comment"> تم تعريفه على انه ثابت فلا يمكن تغيير القيمة</p>
+                <p class="comment">*/</p>
+                <p> <span class="data_type ">return</span> 0;</p>
+                <p>}</p>
+            </div>
+            <h2>فيديو ومصادر شرح الدرس</h2>
+            <div class="learn_from_video">
+                <div class="info_learn_from_video">
+                    <h2>مصادر اخرى</h2>
+                    <div class="linked">
+                        <a href="">قناة اسامة الزيرو</a>
+                    </div>
+                    <div class="linked">
+                        <a href="">قناة كودزيلا</a>
+                    </div>
+                    <div class="linked">
+                        <a href="">د.محمد عبدالعليم</a>
+                    </div>
+                </div>
+                <div class="video_learn_from_video">
+                    <video controls muted loop>
+                            <source src="../c++/فيديو/varible.mp4" type="video/mp4">
+                            your browser dosen't support this video
+                        </video>
+                </div>
+            </div>
+            <footer>
+                <div>
+                    the end
+                    <p class="tawke3">Eng:Omar Ramadan</p>
+                </div>
+            </footer>
+</body>
+
+</html>

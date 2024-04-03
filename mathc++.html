@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <h2>العمليات الرياضية</h2>
+    <p>العمليات الرياضية في لغات البرمجة يقصد بها عمليات الرياضية المعروفة من جمع وطرح وضرب وقسمة تجري بين المتغيرات .</p>
+    <p>المثال الأول يشرح هذا المثال عملية تعريف متغيرين واعطاء كل متغير قيمة رقمية واجراء العمليات الرياضية من جمع وطرح وضرب وقسمة وجعل ناتج كل عملية في متغير جديد </p>
+    <div class="code ">
+        <p>#<span class="data_type ">include</span>
+            <<span>iostream></p>
+        <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p><span class="data_type ">int</span><span class="variabol">num1</span> =20,<span class="variabol"> num2</span> =10;</p>
+        <p><span class="data_type ">int</span> <span class="variabol">sum</span> =<span class="variabol">num1</span> + <span class="variabol">num2</span> ;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "Sum:" </span>
+                <<<span>sum
+                    <<<span>endl;</p>
+        <p> <span class="data_type ">int</span> <span class="variabol"> sub</span> = <span class="variabol">num1</span> - <span class="variabol">num2</span> ;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text">"Sub:"</span>
+                <<<span> sub
+                    <<<span> endl;</p>
+        <p><span class="data_type ">int</span> <span class="variabol"> mul</span> = <span class="variabol">num1</span> * <span class="variabol">num2</span> ;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "Mul:" </span>
+                <<<span> mul
+                    <<<span>endl;</p>
+        <p><span class="data_type ">int</span><span class="variabol"> div </span> = <span class="variabol">num1</span> / <span class="variabol">num2</span> ;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "Div:" </span>
+                <<<span> div
+                    <<<span>endl;</p>
+        <p><span class="data_type">return </span> 0;</p>
+        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Sum:30</p>
+        <p>Sub:10</p>
+        <p>Mul:200</p>
+        <p>Div:2</p>
+    </div>
+    <h3> مثال اخر</h3>
+    <p>المثال الثاني يشرح هذا المثال عملية تعريف متغيرين واعطاء كل متغير قيمة يتم ادخالها من خلال شاشة التنفيذ كما مر سابقاً .</p>
+    <div class="code ">
+        <p>#<span class="data_type ">include</span>
+            <<span>iostream></p>
+        <p><span class="data_type ">using namespace </span><span class="std ">std</span>;</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p><span class="data_type ">int</span> <span class="variabol"> num1 </span>, <span class="variabol"> num2 </span>;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "First Number: "</span>;</p>
+        <p><span class="data_type ">cin</span> >> <span class="variabol">num1</span>;</p>
+        <p><span class="data_type ">cout</span>
+            << <span class="text">"Second Number: "</span>;</p>
+        <p><span class="data_type ">cin</span> >> <span class="variabol">num2</span>;</p>
+        <p><span class="data_type ">int</span> sum = <span class="variabol">num1</span> + <span class="variabol">num2 </span>;</p>
+        <p><span class="data_type ">cout</span>
+            << <span class="text"> "Sum:" </span>
+                <<<span><span class="variabol"> sum </span>
+                    <<<span>endl;</p>
+        <p><span class="data_type ">int</span> sub = <span class="variabol">num1</span> - <span class="variabol">num2 </span>;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "Sub:"</span>
+                <<<span><span class="variabol"> sub </span>
+                    <<<span> endl;</p>
+        <p><span class="data_type ">int</span> mul = <span class="variabol">num1</span> * <span class="variabol">num2 </span>;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "Mul:"</span>
+                <<<span><span class="variabol">mul</span>
+                    <<<span>endl;</p>
+        <p><span class="data_type ">int</span> div = <span class="variabol">num1</span> / <span class="variabol">num2 </span>;</p>
+        <p><span class="data_type ">cout</span>
+            <<<span class="text"> "Div:"</span>
+                <<<span><span class="variabol"> div </span>
+                    <<<span> endl;</p>
+        <p><span class="data_type">return </span> 0;</p>
+        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>First Number: 20</p>
+        <p>Second Number: 10</p>
+        <p>Sum:30</p>
+        <p>Sub:10</p>
+        <p>Mul:200</p>
+        <p>Div:2</p>
+    </div>
+    <h2>فيديو ومصادر شرح الدرس</h2>
+    <div class="learn_from_video">
+        <div class="info_learn_from_video">
+            <h2>مصادر اخرى</h2>
+            <div class="linked">
+                <a href="">قناة اسامة الزيرو</a>
+            </div>
+            <div class="linked">
+                <a href="">قناة كودزيلا</a>
+            </div>
+            <div class="linked">
+                <a href="">د.محمد عبدالعليم</a>
+            </div>
+        </div>
+        <div class="video_learn_from_video">
+            <video controls muted loop>
+                <source src="../c++/فيديو/math.mp4" type="video/mp4">
+                your browser dosen't support this video
+            </video>
+        </div>
+    </div>
+    <footer>
+        <div>
+            the end
+            <p class="tawke3">Eng:Omar Ramadan</p>
+        </div>
+    </footer>
+</body>
+
+</html>

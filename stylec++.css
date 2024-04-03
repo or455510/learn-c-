@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*  height: 5000px;*/
+    background-color: rgb(1, 89, 160);
+    color: #fff;
+}
+
+.e {
+    margin-top: 100px;
+}
+
+.header_title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_header img {
+    margin-right: 50px;
+    box-shadow: 0 0 20px #1de5ff, 0 0 50px #1de5ff, 0 0 15px #1de5ff;
+    box-shadow: 0 0 20px #1de5ff, 0 0 50px #1de5ff, 0 0 15px #1de5ff;
+}
+
+.link_header {
+    font-size: 25px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.link_header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    transition: 0.3s ease;
+}
+
+.link_header a:hover {
+    border-bottom: 2px solid;
+    transition: 0.3s ease;
+}
+
+
+/*=======================*/
+
+.dropdawen {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdawenmenu {
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    width: 450px;
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 5px;
+    transform: scale(0);
+    transition: 0.5s ease;
+}
+
+.dropdawenmenu ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.dropdawenmenu a {
+    color: #000;
+}
+
+.dropdawenmenu ul li:first-child a {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #059;
+    display: block;
+}
+
+.dropdawenmenu ul li {
+    line-height: 1.7;
+}
+
+.dropdawen:hover .dropdawenmenu {
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+
+
+/*=====================*/
+
+.about_languege_title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: rgb(1, 89, 160);
+}
+
+.about_languege_info {
+    background-image: url(../c++/images.jpeg);
+    mask-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-size: 30px;
+}
+
+.info_languege {
+    text-align: center;
+    padding: 40px;
+}
+
+.info_languege h2 {
+    display: grid;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: rgb(1, 89, 160);
+    border-radius: 5px;
+    box-shadow: 0 0 20px #1de5ff, 0 0 50px #1de5ff, 0 0 15px #1de5ff;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.5s ease;
+}
+
+.info_languege h3 {
+    justify-content: right;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #1de5ff, 0 0 50px #1de5ff, 0 0 15px #1de5ff;
+    background-color: rgb(1, 89, 160);
+    border-radius: 5px;
+    font-size: 37px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*    cursor: pointer; */
+    padding: 15px;
+    transition: 0.5s ease;
+}
+
+
+/*تعليمات زر موقع المعلومات
+*/
+
+.link_arageek {
+    margin-bottom: 40px;
+}
+
+.link_arageek a {
+    background-color: rgb(1, 89, 160);
+    padding: 10px;
+    border: 2px solid;
+    box-shadow: 0 0 20px #1de5ff, 0 0 50px #1de5ff, 0 0 15px #1de5ff;
+    border-radius: 25px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.link_arageek :hover {
+    background-color: blueviolet;
+    transition: 1s ease;
+}
+
+
+/*===========================*/
+
+.info_languege p {
+    /*     display: none; */
+    font-size: 30px;
+}
+
+
+/*========================*/
+
+.corse_languege_title {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px;
+    color: aliceblue;
+    background-color: rgb(1, 89, 160);
+}
+
+.corse_link {
+    padding: 20px;
+    box-shadow: 0 0 20px #1de5ff, 0 0 50px #1de5ff, 0 0 15px #1de5ff;
+}
+
+.corse_all {
+    background-color: rgb(1, 89, 160);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-size: cover;
+    /*     clip-path: circle(180vh at 50% -80vh);
+ */
+}
+
+.corse_link {
+    border: 2px solid;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(1, 89, 160);
+    border-radius: 25px;
+    margin: 30px 40px;
+    padding: 30px;
+    height: 200px;
+    transition: 0.5s ease;
+}
+
+.corse_link:hover {
+    margin: 10px;
+    background-color: blueviolet;
+    transition: 0.5s ease;
+}
+
+.corse_link a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    /*  padding: 50px; */
+    transition: 0.5s ease;
+}
+
+.corse_link span {
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: rgb(1, 89, 160);
+    color: black;
+}
+
+.corse_all span {
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: azure;
+    color: black;
+}
+
+
+/*=================footer====================*/
+
+.about_me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(1, 89, 160);
+    padding: 20px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.about_me a {
+    font-size: 25px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.about_me a:hover {
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: blueviolet;
+    transition: 0.5s ease;
+}

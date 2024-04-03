@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <p>Function الدوال </p>
+    <p>أو بدونها ويمكن أن تعود بقيمة او لاتعود <span>"parameters" </span>عبارة عن مجموعة من الأوامر أو الاكواد تحت اسم معين لعمل مهمة محددة ، ويتم تطبيقها علي مدخلات </p>
+    <p>Syntax</p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> myFunction(){</p>
+        <p class="comment"> // code to be executed</p>
+        <p>}</p>
+    </div>
+    <p>توضيح :</p>
+    <p> تعني ان الدالة لا تقوم بارجاع اي قيمةVoid</p>
+    <p>اسم الدالة ويمكن كتابة اي اسم اختياري myFunction</p>
+    <p>main هذه الدالة فقط تعمل على طباعة رسالة كمثال بسيط وتم أستدعائها داخل الدالة الرئيسيةshow شرح المثال في هذه المثال قمنا بانشاء دالة ثانية وقمنا بتسميتها </p>
+    <div class="code ">
+        <p>#<span class="data_type ">include</span>
+            <<span>iostream></p>
+        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+        <p class="comment">// دالة اختيارية</p>
+        <p><span class="data_type ">Void</span> show(){</p>
+        <p><span class="data_type ">Cout</span>
+            << <span class="text"> "print from other function "</span>;</p>
+        <p>}</p>
+        <p class="comment">// هذه الدالة الرئيسية</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p class="comment"> // عملية الاستدعاء</p>
+        <p><span class="variabol">Show</span>();</p>
+        <p> Return 0;</p>
+        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p> Print from other function</p>
+    </div>
+    <p>Functions الدوال</p>
+    <p>عمل اكثر من دالة</p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> function1(){</p>
+        <p><span class="data_type ">Cout</span>
+            << <span class="text"> "I Am Function1"</p>
+        <p>
+            }
+        </p>
+        <p><span class="data_type ">Void</span> function2(){</p>
+        <p><span class="data_type ">Cout</span>
+            << <span class="text"> "I Am Function2"</p>
+        <p>
+            }
+        </p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p class="comment"> // عملية الاستدعاء</p>
+        <p><span class="variabol">Function1</span>();</p>
+        <p><span class="variabol">Function2</span>();</p>
+        <p> Return 0;</p>
+        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p> I Am Function1</p>
+        <p> I Am Function2</p>
+    </div>
+    <p>Functions Parameters معاملات الدوال </p>
+    <p>والمعاملات هي متغيرات داخل الدالة يتم كتابتها داخل الاقواس بعد اسم الدالة ويمكن اضافة العديد من المعاملات بدون تقييد.Parameters كمعاملات methods يمكن تمرير البيانات او المعلومات الى الدوال </p>
+    <p>Syntax</p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> <span class="variabol">myFunction</span>(param1,param2,…){</p>
+        <p class="comment"> // code to be executed</p>
+        <p>}</p>
+        <p><span class="data_type ">Void</span> <span class="variabol">student</span>(string name,int degree){</p>
+        <p class="comment"> // code to be executed</p>
+        <p>}</p>
+    </div>
+    <p>مثال الاول</p>
+    <p>طباعته <span>ليتم</span> sring واحد من نوع parameterفي هذا المثال مررنا معامل </p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> <span class="variabol">printName</span>(<span class="data_type ">string</span> <span class="variabol">name</span>){</p>
+        <p><span class="data_type ">Cout</span>
+            << <span class="text"> "Hallo"</span>
+                <<<span class="variabol">name</span>
+                    << endl; </p>
+                        <p>}</p>
+                        <p><span class="data_type ">int</span> main(){</p>
+                        <p class="comment"> // عملية الاستدعاء</p>
+                        <p><span class="variabol">printName</span>("omar");</p>
+                        <p> Return 0;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Hello omar </p>
+    </div>
+    <p>مثال ثاني</p>
+    <p>int والثاني من نوع string واحد من نوع two parameter في هذا المثال مررنا معاملين </p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> <span class="variabol">student</span>(string name,int age){</p>
+        <p><span class="data_type ">Cout</span>
+            << <span class="text"> "Name:"</span>
+                <<<span class="variabol">name</span>
+                    << <span class="text"> "Age:"</span>
+                        <<<span class="variabol">Age</span>
+                            << endl; </p>
+                                <p>}</p>
+                                <p><span class="data_type ">int</span> main(){</p>
+                                <p><span class="variabol">student</span>("omar",19);</p>
+                                <p><span class="variabol">student</span>("ramadan",48);</p>
+                                <p> Return 0;</p>
+                                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Name :omar, Age :19 </p>
+        <p>Name :ramadan, Age :48 </p>
+    </div>
+    <p>Functions Parameters معاملات الدوال </p>
+    <p>في هذا المثال تم أستخدام اربعة دوال لأجراء عمليات الجمع والطرح والضرب والقسمة</p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> <span class="variabol">SumFunction</span>(<span class="data_type ">int</span><span class="variabol">num1</span> ,<span class="data_type ">int</span><span class="variabol">num2</span> ){</p>
+        <span class="data_type ">int</span><span class="variabol">sum</span>=<span class="variabol">num1</span>+<span class="variabol">num2</span>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"sum"</span>
+                <<<span class="variabol">sum</span>
+                    << endl; </p>
+                        <p>}</p>
+                        <p><span class="data_type ">Void</span> <span class="variabol">SubFunction</span>(<span class="data_type ">int</span><span class="variabol">num1</span> ,<span class="data_type ">int</span><span class="variabol">num2</span> ){</p>
+                        <span class="data_type ">int</span><span class="variabol">Sub</span>=<span class="variabol">num1</span>-<span class="variabol">num2</span>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Sub"</span>
+                                <<<span class="variabol">Sub</span>
+                                    << endl; </p>
+                                        <p>}</p>
+                                        <p><span class="data_type ">Void</span> <span class="variabol">MulFunction</span>(<span class="data_type ">int</span><span class="variabol">num1</span> ,<span class="data_type ">int</span><span class="variabol">num2</span>                                            ){</p>
+                                        <span class="data_type ">int</span><span class="variabol">Mul</span>=<span class="variabol">num1</span>*<span class="variabol">num2</span>
+                                        <p><span class="data_type ">Cout</span>
+                                            <<<span class="text">"Mul"</span>
+                                                <<<span class="variabol">Mul</span>
+                                                    << endl; </p>
+                                                        <p>}</p>
+                                                        <p><span class="data_type ">Void</span> <span class="variabol">DivFunction</span>(<span class="data_type ">int</span><span class="variabol">num1</span> ,<span class="data_type ">int</span><span class="variabol">num2</span>                                                            ){</p>
+                                                        <span class="data_type ">int</span><span class="variabol">Div</span>=<span class="variabol">num1</span>/<span class="variabol">num2</span>
+                                                        <p><span class="data_type ">Cout</span>
+                                                            <<<span class="text">"Div"</span>
+                                                                <<<span class="variabol">Div</span>
+                                                                    << endl; </p>
+                                                                        <p>}</p>
+                                                                        <p><span class="data_type ">int</span> main(){</p>
+                                                                        <p><span class="variabol">SumFunction</span>(5,10);</p>
+                                                                        <p><span class="variabol">SumFunction</span>(10,20);</p>
+                                                                        <p><span class="variabol">SumFunction</span>(2,6);</p>
+                                                                        <p><span class="variabol">SumFunction</span>(10,2);</p>
+                                                                        <p> Return 0;</p>
+                                                                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Sum = 15</p>
+        <p>Sub = 10</p>
+        <p>Mul = 12</p>
+        <p>Div = 5</p>
+    </div>
+    <p>Functions الدوال</p>
+    <p> في الدوال return في هذا المثال نتعرف كيفية التعامل مع الارجاع </p>
+    <p> تستخدم لأرجاع قيمة بعد معالجتها الى الدالة الرئيسية ليتم تضمينها في متغير أو أجراء معالجات أخرى عليها ضمن الدالة الرئيسية . Return</p>
+    <p> void او غيرها مخلال كتابة النوع بدلاُ من string او int اي ان الدالة لا ترجع اي قيمة اما في الدرس التالي سنتعلم كيف ان الدالة تقوم بارجاع قيم من اي نوع سواء كانت قيم void انواع الارجاع في الدروس السابقة تم تعريف جميع الدوال على انها </p>
+    <div class="code">
+        <p><span class="data_type ">Void</span> <span class="variabol">SumFunction</span>(<span class="data_type ">int</span><span class="variabol">num1</span> ,<span class="data_type ">int</span><span class="variabol">num2</span> ){</p>
+        <span class="data_type ">int</span><span class="variabol">s</span>=<span class="variabol">num1</span>+<span class="variabol">num2</span>
+        <p><span class="data_type ">Return</span><span class="variabol">s</span>; </p>
+        <p>}</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p><span class="data_type ">int</span><span class="variabol">s</span>=<span class="variabol">SumFunction</span>(5,10);</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"Sum with return ="</span>
+                <<<span class="variabol">sum</span>
+                    << endl; </p>
+                        <p> Return 0;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Sum with return =15</p>
+    </div>
+    <p> الذي تم تعريفه في دالة الرئيسية <span>sum ال </span>لانها تقوم بجمع الرقين وترجع ناتج الجمع الى الدالة الرئيسية ليتم وضعها بمتغير <span>void ال </span> بدلint تحتوي على معاملين وقمنا بكتابة النوع SumFunction توضيح المثال : قمنا في هذا المثال بتعريف
+        دالة اسمها </p>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if stetment</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <h2>الجملة الشرطية</h2>
+    <p>للتعامل مع الجمل الشرطية .ifالجمل الشرطية هي مجموعة من الأوامر البرمجية التي لا تُنفذ إلا عندما يتحقق شرط ما ويستخدم ال </p>
+    <p>انواع الجمل الشرطية</p>
+    <p>if</p>
+    <div class="code">
+        <p>If (condition) {</p>
+        <p>// هنا يتنفذ الكود عندما يتحقق الشرط</p>
+        <p>}</p>
+    </div>
+    <div class="code">
+        <p>If..else</p>
+        <p>If (condition) {</p>
+        <p> //يتنفذ عندما يتحقق الشرط</p>
+        <p>}else{</p>
+        <p> //يتنفذ عندما لا يتحقق الشرط</p>
+        <p>}</p>
+    </div>
+    <p>If..elseif..else</p>
+    <div class="code">
+        <p>If (condition1) {</p>
+        <p> //يتنفذ عندما يتحقق الشرط الاول</p>
+        <p>}</p>
+        <p>Else if (condition2) {</p>
+        <p> //يتنفذ عندما يتحقق الشرط الثاني</p>
+        <p>}else{</p>
+        <p>//يتنفذ عندما لا يتحقق ولا شرط</p>
+        <p>}</p>
+    </div>
+    <p>الجملة الشرطية : </p>
+    <p>if</p>
+    <p>مثال اول في هذا المثال عرفنا متغيرين واعطينا لكل منهما قيمة 4 وقمنا بعمل شرط وهو اذا تساوى قيمة المتغيرين نفذ ما داخل الشرط</p>
+    <div class="code ">
+        <p>#<span class="data_type ">include</span>
+            <<span>iostream></p>
+        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p><span class="data_type ">int</span><span class="variabol">a</span> =4;</p>
+        <p><span class="data_type ">int</span><span class="variabol">b</span> =4;</p>
+        <p><span class="data_type ">if</span>(<span class="variabol">a</span>==<span class="variabol">b</span>)</p>
+        <p>{</p>
+        <p><span class="data_type ">Cout</span>
+            << "القيمة متساوية";</p>
+                <p>}</p>
+                <p> Return 0;</p>
+                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>االقيمة متساوية</p>
+    </div>
+    <P> وهي دالة تعيد لنا عدد احرف المتغير النصي وقمنا بعمل شرط وهو اذا عدد احرف المتغير النصي اكبر من 5 نفذ ما داخل الشرطlength ثم استخدمنا الدالة welcomeمثال ثاني في هذا المثال عرفنا متغير نصي واعطينا قيمة نصية </P>
+    <div class="code">
+        <p><span class="data_type ">string</span><span class="variabol">str</span>=<span class="text"> "welcome "</span>;</p>
+        <p><span class="data_type ">if</span>(<span class="variabol">str</span>.length()><span class="variabol">5</span>)</p>
+        <p>{</p>
+        <p><span class="data_type ">Cout</span>
+            << "تحقق:طول النص اكبر من 5 احرف";</p>
+                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>تحقق:طول النص اكبر من 5 احرف</p>
+    </div>
+    <h3>if else</h3>
+    <p> else تعني اذا لم يتحقق الشرط فنفذ ماهو ضمن </p>
+    <p>مثال يسمح للطالب بادخال الدرجة ومعرفة هل هو ناجح او راسب</p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"Enter Degree :"</span>;</p>
+        <p><span class="data_type ">cin</span>>><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">if</span>(<span class="variabol">degree</span>>=50)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"ناجح"</span>;</p>
+            <p>}</p>
+            <p>else</p>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"راسب"</span>;</p>
+            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Enter Degree : 70</p>
+        <p>ناجح</p>
+    </div>
+    <p>Output2 :</p>
+    <div class="code ">
+        <p>Enter Degree : 39</p>
+        <p>راسب</p>
+        <h3>If ElseIf</h3>
+        <p> else اذا لم يتحقق الشرط الاول فأنتقل الى الشرط الثاني واذا لم يتحقق الشرط الثاني فانتقل للشرط الثالث وهكذا حتى يتم تجربة كل الشروط واذا لم يتحقق ولا شرط ينفذ ما هو موجود ضمن .
+        </p>
+        <p>مثال اول يسمح للطالب بادخال الدرجة ومعرفة التقييم</p>
+    </div>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"Enter Degree :";</p>
+        <p><span class="data_type ">cin</span>>><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">if</span>(<span class="variabol">degree</span>>=90)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"ممتاز"</span>;</p>
+            <p>}</p>
+            <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=80)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="text">"جيد جدا"</span>;</p>
+                <p>}</p>
+                <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=70)</span>
+                    <p>{</p>
+                    <p><span class="data_type ">Cout</span>
+                        <<<span class="text">"جيد"</span>;</p>
+                    <p>}</p>
+                    <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=60)</span>
+                        <p>{</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"متوسط"</span>;</p>
+                        <p>}</p>
+                        <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=50)</span>
+                            <p>{</p>
+                            <p><span class="data_type ">Cout</span>
+                                <<<span class="text">"حالفك الحظ"</span>;</p>
+                            <p>}</p>
+                            <p>else</p>
+                            <p>{</p>
+                            <p><span class="data_type ">Cout</span>
+                                <<<span class="text">"راسب"</span>;</p>
+                            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Enter Degree : 64</p>
+        <p>متوسط</p>
+    </div>
+    <p>Output2 :</p>
+    <div class="code ">
+        <p>Enter Degree : 34</p>
+        <p>راسب</p>
+    </div>
+    <p>Output3 :</p>
+    <div class="code ">
+        <p>Enter Degree : 87</p>
+        <p>جيد جدا</p>
+    </div>
+    <p>والتي ترجع صحيح اذا تحقق الشرطين && - AND شرطين بينهما علامة ifمثال ثاني في هذا المثال عملنا داخل كل </p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"Enter Degree :";</p>
+        <p><span class="data_type ">cin</span>>><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">if</span>(<span class="variabol">degree</span>>=90)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"ممتاز"</span>;</p>
+            <p>}</p>
+            <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=80&&<span class="variabol">degree</span>
+                <<span>90)</span>
+                    <p>{</p>
+                    <p><span class="data_type ">Cout</span>
+                        <<<span class="text">"جيد جدا"</span>;</p>
+                    <p>}</p>
+                    <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=70&&<span class="variabol">degree</span>
+                        <<span>80)</span>
+                            <p>{</p>
+                            <p><span class="data_type ">Cout</span>
+                                <<<span class="text">"جيد"</span>;</p>
+                            <p>}</p>
+                            <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=60&&<span class="variabol">degree</span>
+                                <<span>70)</span>
+                                    <p>{</p>
+                                    <p><span class="data_type ">Cout</span>
+                                        <<<span class="text">"متوسط"</span>;</p>
+                                    <p>}</p>
+                                    <p><span class="data_type ">else if</span>(<span class="variabol">degree</span>>=50&&<span class="variabol">degree</span>
+                                        <<span>60)</span>
+                                            <p>{</p>
+                                            <p><span class="data_type ">Cout</span>
+                                                <<<span class="text">"حالفك الحظ"</span>;</p>
+                                            <p>}</p>
+                                            <p>else</p>
+                                            <p>{</p>
+                                            <p><span class="data_type ">Cout</span>
+                                                <<<span class="text">"راسب"</span>;</p>
+                                            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Enter Degree : 99</p>
+        <p>ممتاز</p>
+    </div>
+    <p>Output2 :</p>
+    <div class="code ">
+        <p>Enter Degree : 22</p>
+        <p>راسب</p>
+    </div>
+    <h3>Nested if الشروط المتداخلة</h3>
+    <p>وتعني اذا تحقق شرط ما ارتبط مع شرط اخر داخل هذا الشرط ليقوم بالتحقق منه .</p>
+    <div class="code">
+        <p>If (condition) {</p>
+        <p> If (Nested condition) {</p>
+        <p class="comment"> //يتنفذ عندما يتحقق الشرط الداخلي</p>
+        <p>}else{</p>
+        <p class="comment"> //يتنفذ عندما لا يتحقق الشرط الداخلي</p>
+        <p>}</p>
+        <p>}else{</p>
+        <p class="comment">//يتنفذ عندما لا يتحقق الشرط الرئيسي</p>
+        <p>}</p>
+        <p>مثال</p>
+    </div>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"Enter Degree :";</p>
+        <p><span class="data_type ">cin</span>>><span class="variabol">degree</span>;</p>
+        <p><span class="data_type ">if</span>(<span class="variabol">degree</span>>=50)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"ناجح"</span>;</p>
+            <p>}</p>
+            <p>else</p>
+            <p>{</p>
+            <p><span class="data_type ">if</span>(<span class="variabol">degree</span>>=45)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="text">"ناجح بقرار"</span>;</p>
+                <p>}</p>
+                <p>else</p>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="text">"راسب"</span>;</p>
+                <p>}</p>
+                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Enter Degree : 48</p>
+        <p>ناجح بقرار</p>
+    </div>
+    <p>Output2 :</p>
+    <div class="code ">
+        <p>Enter Degree : 65</p>
+        <p>ناجح</p>
+    </div>
+    <p>Output3 :</p>
+    <div class="code ">
+        <p>Enter Degree : 22</p>
+        <p>راسب/p>
+    </div>
+    <h3>Statements Switch</h3>
+    <p> لاختيار تنفيذ كتلة تعليمية من مجموعة كتل يعتمد الاختيار على محتوى القيمة المدخلةswitch تستخدم عبارة التبديل </p>
+    <h3>Syntax</h3>
+    <div class="code">
+        <p class="data_type ">Switch</span>(<span class="variabol">expression</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Case</span><span class="variabol">x</span>:</p>
+            <p class="comment">// code block</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">y</span>:</p>
+            <p class="comment">// code block</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Default</span>:</p>
+            <p class="comment">// code block</p>
+            <p></p>
+            <p>}</p>
+    </div>
+    <p></p>
+    <p>خطوات العمل:</p>
+    <p>1-switch يتم ادخال القيمة ضمن </p>
+    <p>2-مقارنة القيمة مع كل الكتل التعليمية</p>
+    <p>3-تنفيذ الكتلة التتي تتطابق مع القيمة المدخلة وترك الباقي</p>
+    <p> كلمات مفتاحية اختيارية Break and default-4</p>
+    <p>Statements Switch</p>
+    <p>وينفذ الكتلة التعليمية داخلهاcase 4وفي هذا المثال يتم تطابق مع switchوالتي تساوي 4 مع كل حالات day مثال في هذا المثال نقوم بمقارنة قيمة متغير </p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">day</span> =4;</p>
+        <p class="data_type ">Switch</span>(<span class="variabol">day</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Case</span><span class="variabol">1</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Monday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">2</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Tuesday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">3</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Wednesday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">4</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Thursday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">5</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Friday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">6</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Saturday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">7</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Sunday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Default</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"No Day"</span>;</p>
+            <p></p>
+            <p></p>
+            <p>}</p>
+    </div>
+    <p>Output:</p>
+    <div class="code ">
+
+        <p>Thursday</p>
+    </div>
+    <p>يقوم باخبار مترجم اللغة ان يتوقف عن مقارنة باقي شروط عندما تتطابق الكتلة الخاصة به , اي وكما في المثال Break </p>
+    <p>breakوعندما يصل الى الكتلة التعليمية التي قيمتها 4 يقوم بتنفيذ هذه الكتلة و dayالسابق قمنا باعطاء الرقم 4 الى المتغير </p>
+    <p> من التحقق من باقي الكتلswitch الموجودة داخل هذه الكتلة تمنع استمرار </p>
+    <p>في الشروط ,وتعني اذا لم يتم تطابق القيمة مع اي من الكتل التعليمية فيتم تنفيذ ما داخل else وهي شبيهة Default </p>
+    <p>لان لا يوجد Default,قيمة 10 فهنا سينفذ ما داخل day ولنفرض في المثال السابق لو قمنا باعطاء المتغيرDefault</p>
+    <p>day=10 لدينا حالة تتطابق مع </p>
+    <p>Statements Switch</p>
+    <p>dayمثال اخر في هذا المثال يقوم المستخدم بادخال قيمة </p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">day</span>;</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"Enter day :"</span>;</p>
+        <p><span class="data_type ">cin</span>>><span class="variabol">day</span>;</p>
+        <p class="data_type ">Switch</span>(<span class="variabol">day</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Case</span><span class="variabol">1</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Monday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">2</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Tuesday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">3</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Wednesday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">4</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Thursday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">5</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Friday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">6</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Saturday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Case</span><span class="variabol">7</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"Sunday"</span>;</p>
+            <p>Break;</p>
+            <p><span class="data_type ">Default</span>:</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"No Day"</span>;</p>
+            <p></p>
+            <p></p>
+            <p>}</p>
+    </div>
+    <p>Output:</p>
+    <div class="code ">
+        <p>Enter Day :4</p>
+        <p>Thursday</p>
+    </div>
+    <p>Output2:</p>
+    <div class="code ">
+        <p>Enter Day :7</p>
+        <p>Sunday</p>
+    </div>
+    <p>Output3:</p>
+    <div class="code ">
+        <p>Enter Day :9</p>
+        <p>No Day</p>
+    </div>
+</body>
+
+</html>

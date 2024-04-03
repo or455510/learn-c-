@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <h2>العمليات المنطقية</h2>
+    <p>true or false و هي العمليات التي تساعدنا في صناعة الشروط و القيود على شي معين و بالتالي تمنحنا تحكماً أكبر في الكود و القيم المنطقية ترمز إلى الأشياء التي لا تحتمل أكثر من احتمالين و هما إما صح و إما خطأ </p>
+    <p>falseاو 0 وتعني trueيكون ناتج العمليات المنطقية اما 1 وتعني C++في لغة </p>
+    <p>العملية المنطقية الوصف</p>
+    <p>X > Y وتعني أكبر من</p>
+    <p>X
+        < Y وتعني أصغر من</p>
+            <p>X == Y وتعني يساوي</p>
+            <p>X != Y وتعني لا يساوي</p>
+            <p>X >= Y وتعني أكبر أو يساوي</p>
+            <p>X
+                <=Y وتعني أصغر أو يساوي</p>
+                    <p>X && Y trueويجب تحقيق الشرطين حول هذا العلامة حتى ترجع (و-And)وتسمى</p>
+                    <p>X || Y trueويكفي تحقيق أحد الشرطين حول هذه العلامة حتى ترجع (أو-OR)وتسمى </p>
+                    <p>العمليات المنطقية</p>
+                    <p>مثال بسيط في هذا لمثال تم تعريف متغيرين صحيحين وتم اعطاء كل متغير قيمة ومن ثم تم تعريف متغير ثالث من نوع </p>
+                    <p>ووضعنا x>yلذلك عملنا عملية منطقية وهي false اوtrue هذا المتغير يجب ان يحتوي على قيمتين فقط اما boolean </p>
+                    <p>واذا كانت ليست true هنا سيكون الناتج عبارة عنyاكبر من قيمة xوبالتالي اذا كانت قيمة boolean النتيجة في المتغير </p>
+                    <p>false اكبر ستكون النتيجة عبارة عن </p>
+                    <div class="code ">
+                        <p>#<span class="data_type ">include</span>
+                            <<span>iostream></p>
+                        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+                        <p><span class="data_type ">int</span> main(){</p>
+
+                        <p><span class="data_type ">bool</span> <span class="variabol">r</span> =(<span class="variabol">x</span> ><span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result:"</span>
+                                <<<span>r
+                                    <<<span>endl;</p>
+                        <p> Return 0;</p>
+                        <p>}</p>
+                    </div>
+                    <p>Output :</p>
+                    <div class="code ">
+                        <p>Result : 1</p>
+                    </div>
+                    <p>العمليات المنطقية</p>
+                    <p>مثال في هذا المثال سنشرح اكثر العمليات المنطقية استخداماً :</p>
+                    <div class="code ">
+                        <p>#<span class="data_type ">include</span>
+                            <<span>iostream></p>
+                        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+                        <p><span class="data_type ">int</span> main(){</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r1</span> =(<span class="variabol">x</span> ><span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result1:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r2</span> =(<span class="variabol">x</span>
+                            < <span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result2:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r3</span> =(<span class="variabol">x</span> == <span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result3:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r4</span> =(<span class="variabol">x</span> != <span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result4:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r5</span> =(<span class="variabol">x</span> >=<span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result5:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r6</span> =(<span class="variabol">x</span>
+                            <=< span class="variabol">y</span>) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result6:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p> Return 0;</p>
+                        <p>}</p>
+                    </div>
+                    <p>Output :</p>
+                    <div class="code ">
+                        <p>Result1 : 1</p>
+                        <p>Result2 : 0</p>
+                        <p>Result3 : 0</p>
+                        <p>Result4 : 1</p>
+                        <p>Result5 : 1</p>
+                        <p>Result6 : 0</p>
+                    </div>
+                    <h3>العمليات المنطقية</h3>
+                    <p>||في هذا الدرس سنشرح العمليتين المنطقيتين && و </p>
+                    <p>&& احتمالات هذه العملية :</p>
+                    <p>True && true = true</p>
+                    <p>True && false = false</p>
+                    <p>False && true = false</p>
+                    <p>False && false = false</p>
+                    <h3>|| احتمالات هذه العملية </h3>
+                    <p>True || true = true</p>
+                    <p>True || false = true</p>
+                    <p>False || true = true</p>
+                    <p>False || false = false</p>
+                    <p>مثال</p>
+
+                    <div class="code ">
+                        <p>#<span class="data_type ">include</span>
+                            <<span>iostream></p>
+                        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+                        <p><span class="data_type ">int</span> main(){</p>
+                        <p><span class="data_type ">int</span><span class="variabol">x</span> =10,<span class="variabol">y</span> =5;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r1</span> =(<span class="variabol">x</span>>9&&<span class="variabol">y</span>>2) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result1:"</span>
+                                <<<span>r1
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r2</span> =(<span class="variabol">x</span>>4&&<span class="variabol">y</span>
+                            <<span>2) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result2:"</span>
+                                <<<span>r2
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r3</span> =(<span class="variabol">x</span>>4||<span class="variabol">y</span>
+                            <<span>2) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result3:"</span>
+                                <<<span>r3
+                                    <<<span>endl;</p>
+                        <p><span class="data_type ">bool</span> <span class="variabol">r4</span> =(<span class="variabol">x</span>
+                            <<span>4||<span class="variabol">y</span>
+                                <<span>2) ;</p>
+                        <p><span class="data_type ">Cout</span>
+                            <<<span class="text">"Result4:"</span>
+                                <<<span>r4
+                                    <<<span>endl;</p>
+                        <p> Return 0;</p>
+                        <p>}</p>
+                    </div>
+                    <p>Output :</p>
+                    <div class="code ">
+                        <p> Result1 : 1</p>
+                        <p> Result2 : 0</p>
+                        <p> Result3 : 1</p>
+                        <p> Result4 : 0</p>
+                    </div>
+</body>
+
+</html>

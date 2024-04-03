@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <h2>For الحلقة التكرارية </h2>
+    <p>تستخدم التكرارية للتعامل مع الكود أكثر من مرة مثل طباعة رسالة اكثر من مرة .</p>
+    <p>Syntax</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="variabol">statement1;</span><span class="variabol">statement2;</span><span class="variabol">statement3</span>)</span>
+            <p>{</p>
+            <p class="comment">// code block to be executed</p>
+            <p>}</p>
+    </div>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol">i=0;</span><span class="variabol">i < 5;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p class="comment">// code block to be executed</p>
+            <p>}</p>
+    </div>
+    <p>Statement1: تعريف متغير واعطائه قيمة ثابتة كأن تكون بداية للتكرار او نهاية</p>
+    <p>Statement2: شرط استمرار التكرار</p>
+    <p>Statement3: زيادة او نقصان استمرار التكرار</p>
+    <p>I++</p>
+    <p> فكلها نفس العمل i+=1 او استخدام i=i+1وتعني زيادة العدد قيمة واحدة ويمكن استخدام بدلها incrementوتسمى</p>
+    <p>المثال الاول</p>
+    <p>متى ما iواعطينا له قيمة ابتدائية وتساوي 0 , ووضعنا شرط التكرار طباعة قيمة iفي هذا المثال عرفنا متغير التكرار </p>
+    <p>زيادة بمقدار واحد i++ 1بقيمة iاصغر من 3 وزيادة , i كانت </p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol">i=0;</span><span class="variabol">i < 3;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i"</span>
+                    << endl;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <p>مثال ثاني</p>
+    <p>i++هي نفسها i=i+1اوتساوي 4 والزيادة بمقدار 1 , للتنبيه <span>اصغر</span> i هنا قيمة بداية التكرار 1 ويستمر التكرار مهما كانت قيمة </p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol">i=0;</span><span class="variabol">i <= 4;</span><span class="variabol">i=i+1</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i"</span>
+                    << endl;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+    <p>مثال ثالث</p>
+    <p>i=i+1وكذلكi++هي نفسها <span>i+=1</span> اصغر او تساوي 10 والزيادة بمقدار 1 , للتنبيه <span>iال</span>هنا قيمة بداية التكرار 5 ويستمر التكرار مهما كانت قيمة </p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol">i=5;</span><span class="variabol">i <= 10;</span><span class="variabol">i+=1</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i"</span>
+                    << endl;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </div>
+    <p>مثال رابع</p>
+    <p>اصغر او تساوي 10 والزيادة بمقدار 2<span>iال  </span>هنا قيمة بداية التكرار 0 ويستمر التكرار مهما كانت قيمة </p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol">i=0;</span><span class="variabol">i <= 10;</span><span class="variabol">i+=2</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i"</span>
+                    << endl;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>2</p>
+        <p>4</p>
+        <p>6</p>
+        <p>8</p>
+        <p>10</p>
+    </div>
+    <p>For الحلقة التكرارية </p>
+    <p>نفس الاداءi--و i=i-1 و i-=1 للتنبيه <span>iال </span>التكرار بالنقصان في هذا المثال سنقوم بالنقصان وليس الزيادة لمتغير التكرار </p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i=5;</span><span class="variabol">i <= 0;</span><span class="variabol">i--</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i"</span>
+                    << endl;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>5</p>
+        <p>4</p>
+        <p>3</p>
+        <p>2</p>
+        <p>1</p>
+    </div>
+    <p>مثال ثاني</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i=10;</span><span class="variabol">i >= 4;</span><span class="variabol">i-=2</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i"</span>
+                    << endl;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>10</p>
+        <p>2</p>
+        <p>6</p>
+        <p>4</p>
+    </div>
+    <p>For الحلقة التكرارية المتداخلة </p>
+    <p>في كل حلقة تكرار واحدة يتم تنفيذ حلقة تكرارية متكاملة داخل هذه الحلقة الرئيسية </p>
+    <p>مثال الاول في هذا المثال حلقة متداخلة اي حلقة تكرارية داخلة حلقة اخرى</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i=1;</span><span class="variabol">i <= 3;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> j=1;</span><span class="variabol">i <= 2;</span><span class="variabol">j++</span>)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="text">"i="</span><span class="variabol"> i</span>
+                        << <span class="text">"j="</span><span class="variabol"> j</span>
+                            << endl;</p>
+                                <p>}</p>
+                                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>i=1 j=1</p>
+        <p>i=1 j=2</p>
+        <p>i=2 j=1</p>
+        <p>i=2 j=2</p>
+        <p>i=3 j=1</p>
+        <p>i=3 j=2</p>
+    </div>
+    <p>مثال ثاني مثال لعملية الضرب</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i=1;</span><span class="variabol">i <= 3;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> j=1;</span><span class="variabol">j <= 2;</span><span class="variabol">j++</span>)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="variabol"> i</span>
+                        <<<span class="text">"*"</span><span class="variabol"> j</span>
+                            <<<span class="variabol"> i</span> * <span class="variabol"> j</span>
+                                << endl;</p>
+                                    <p>}</p>
+                                    <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>1 * 1=1</p>
+        <p>1 * 2=2</p>
+        <p>2 * 1=2</p>
+        <p>2 * 2=4</p>
+        <p>3 * 1=3</p>
+        <p>3 * 2=6</p>
+    </div>
+    <p>مثال ثالث توضيح اكثر بساطة للتمييز بين عمل التكرار المتداخل</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i=1;</span><span class="variabol">i <= 3;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"-----لتكرار الخارجي----""</span>
+                    << endl;</p>
+                        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> j=1;</span><span class="variabol">j <= 2;</span><span class="variabol">j++</span>)</span>
+                            <p>{</p>
+                            <p><span class="data_type ">Cout</span>
+                                <<<span class="text">"التكرار الداخلي"</span>
+                                    << endl;</p>
+                                        <p>}</p>
+                                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>-----لتكرار الخارجي----</p>
+        <p>التكرار الداخلي</p>
+        <p>التكرار الداخلي</p>
+        <p>-----لتكرار الخارجي----</p>
+        <p>التكرار الداخلي</p>
+        <p>التكرار الداخلي</p>
+        <p>-----لتكرار الخارجي----</p>
+        <p>التكرار الداخلي</p>
+        <p>التكرار الداخلي</p>
+    </div>
+    <p>While Loop الحلقة التكرارية </p>
+    <p> لكن يعتمد مبدء عملها واستمرار دورانها على الشرط داخل القوس مهما كان متنفذ الشرط فهي تستمر بالتكرار . <span>for ال </span>شبيه بالحلقة التكرارية </p>
+    <p>Syntax</p>
+    <div class="code">
+        <p><span class="data_type ">while</span>(<span class="variabol">condition)</span>
+            <p>{</p>
+            <p class="comment"> // الكود المراد تكراره</p>
+            <p>}</p>
+
+    </div>
+    <p>مثال الاول</p>
+    <div class="code ">
+        <p>#<span class="data_type ">include</span>
+            <<span>iostream></p>
+        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =10;</p>
+        <p><span class="data_type ">while</span>(<span class="variabol">i</span>>0</span>)</p>
+        <p>{</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"i="</span>
+                <<<span class="variabol">i</span>
+                    << endl;</p>
+                        <p>i=i-1</p>
+                        <p>}</p>
+                        <p> Return 0;</p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>i=10</p>
+        <p>i=9</p>
+        <p>i=8</p>
+        <p>i=7</p>
+        <p>i=6</p>
+        <p>i=5</p>
+        <p>i=4</p>
+        <p>i=3</p>
+        <p>i=2</p>
+        <p>i=1</p>
+    </div>
+    <h3>توضيح المثال</h3>
+    <p>اكبر من الصفر نفذ ما هو داخل القوس التكراري i أكبر من الصفر اي مهما كان i نلاحظ ان شرط الاستمرار هو </p>
+    <p>I=i-1</p>
+    <p> تدريجياً <span>i ال </span>حتى ينزل<span>i ال </span>لابد ان نجعل للحلقة التكرارية حد عن الاستمرار بالتكرار لذلك قمنا في كل تكرار بطرح واحد من </p>
+    <p> هنا اصبحت قيمتها صفر فهنا الشرط لا يتحقق وبالتالي لا يتم تنفيذ ماهو داخل القوس<span>i ال </span>من ال10 الى الصفر وبما ان </p>
+    <h3>While Loop الحلقة التكرارية </h3>
+    <p>مثال ثاني في هذا المثال قمنا بالزيادة حتى وصولا الى ال10 .</p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =10;</p>
+        <p><span class="data_type ">while</span>(<span class="variabol">i</span>>0</span>)</p>
+        <p>{</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"i="</span>
+                <<<span class="variabol">i</span>
+                    << endl;</p>
+                        <p>I++ ;<span class="comment">// i=i+1 , I+=1</span></p>
+                        <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>i=1</p>
+        <p>i=2</p>
+        <p>i=3</p>
+        <p>i=4</p>
+        <p>i=5</p>
+        <p>i=6</p>
+        <p>i=7</p>
+        <p>i=8</p>
+        <p>i=9</p>
+        <p>i=10</p>
+    </div>
+    <h3>Do While الحلقة التكرارية </h3>
+    <p>حيث في البداية تقوم بتنفيذ ما داخل القوس ومن ثم تتحقق من الشرط لتتأكد هل الشرط يتحقق <span>while ال </span>مبدء استخدامها عكس </p>
+    <p>لتستمر في التكرار .</p>
+    <p>المثال الاول</p>
+    <p><span>i ال </span>قمنا بطباعة قيمة <span>وكالأتي while </span> ثم قمنا بعملية التحقق من الشرط <span>do ال </span>نلاحظ في هذا المثال قمنا بتنفيذ ما هو داخل </p>
+    <p>التي اصبحت قيمتها iلتصبح قيمتها 9 وبعدها مررنا للتحقق من الشرط فوجد ان<span>i ال </span>والتي تساوي 10 ومن ثم طرح من قيمة </p>
+    <p> ليست اكبر من ال5 كما في المثال وبالتالي لا يتحقق الشرط فخرج من عملية التكرار <span>هي</span>9</p>
+    <p>Syntax</p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =10;</p>
+        <p><span class="data_type ">do</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i="</span>
+                    <<<span class="variabol">i</span>
+                        << endl;</p>
+                            <p>i--</p>
+                            <p>}<span class="data_type ">while</span>(<span class="variabol">i</span>
+                                <=5)</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>i=10</p>
+    </div>
+    <p>مثال ثاني</p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =10;</p>
+        <p><span class="data_type ">do</span>
+            <p>{</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="text">"i="</span>
+                    <<<span class="variabol">i</span>
+                        << endl;</p>
+                            <p>i--</p>
+                            <p>}<span class="data_type ">while</span>(<span class="variabol">i</span>>=5)</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>i=10</p>
+        <p>i=9</p>
+        <p>i=8</p>
+        <p>i=7</p>
+        <p>i=6</p>
+        <p>i=5</p>
+    </div>
+    <h3>Break and Continue التحكم بالعبارات التكرارية </h3>
+    <p> وتستخدم لتوقف الحلقة التكرارية عند حد ما وذلك بوضع شرط فاذا تحقق الشرط ينهي الحلقة التكرارية عن الاستمرار . Break</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i</span>=0;<span class="variabol">i < 10;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">if</span>(<span class="variabol">i</span>==4)</p>
+            <p>{</p>
+            <p><span class="data_type ">Break</span>;</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="variabol"> i</span>
+                    <<<span class="text">"\n"</span>;</p>
+            <p>}</p>
+            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+    <h3>Break and Continue التحكم بالعبارات التكرارية </h3>
+    <p>اصبحت تساوي قيمتها 4 هنا <span>i ال</span>وتستخدم لتخطي تنفيذ التكرار عند تحقق شرط ما فمثلا في هذا المثال شرطنا اذا Continue</p>
+    <p>تخطي هذه المرحلة من التكرار واستمر بباقي عمليات التكرار .</p>
+    <div class="code">
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i</span>=0;<span class="variabol">i < 10;</span><span class="variabol">i++</span>)</span>
+            <p>{</p>
+            <p><span class="data_type ">if</span>(<span class="variabol">i</span>==4)</p>
+            <p>{</p>
+            <p><span class="data_type ">continue</span>;</p>
+            <p><span class="data_type ">Cout</span>
+                <<<span class="variabol"> i</span>
+                    <<<span class="text">"\n"</span>;</p>
+            <p>}</p>
+            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+    </div>
+    <h3>Break for while</h3>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =10;</p>
+        <p><span class="data_type ">while</span>(<span class="variabol">i</span>
+            < 10)</p>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="variabol"> i</span>
+                        <<<span class="text">"\n"</span>;</p>
+                <p>I++ ;</p>
+                <p><span class="data_type ">if</span>(<span class="variabol">i</span>==4)</p>
+                <p>{</p>
+                <p><span class="data_type ">Break</span>;</p>
+                <p>}</p>
+                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+    <h3>Continue for while</h3>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =0;</p>
+        <p><span class="data_type ">while</span>(<span class="variabol">i</span>
+            < 10)</p>
+                <p>{</p>
+                <p><span class="data_type ">if</span>(<span class="variabol">i</span>==4)</p>
+                <p>{</p>
+                <p>I++ ;</p>
+                <p><span class="data_type ">Continue</span>;</p>
+                <p>}</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="variabol"> i</span>
+                        <<<span class="text">"\n"</span>;</p>
+                <p>I++ ;</p>
+                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>0</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+    </div>
+</body>
+
+</html>

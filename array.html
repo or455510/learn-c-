@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="../c++/styleleson1.css">
+</head>
+
+<body>
+    <h2>Array المصفوفات</h2>
+    <p>Array</p>
+    <p>المصوفة هي عبارة عن متغير ب(أسم واحد ونوع واحد) يستطيع ان يحمل اكثر من قيمة اي مجموعة متغيرات تحت اسم واحد . </p>
+    <p>Syntax</p>
+    <div class="code">
+        <p><span class="data_type ">Type</span><span class="variabol">name</span>[length]={item1,item2,....};</p>
+    </div>
+    <p>انواع بيانات المصفوفات</p>
+    <p><span class="data_type ">string</span><span class="variabol">mynum</span>[4]={10,20,30,40};</p>
+    <p><span class="data_type ">string</span><span class="variabol">car</span>[3]={"Volvo","BMW","Ford"};</p>
+    <p>ملء عناصر المصفوفة بشكل منفصل</p>
+    <p><span class="data_type ">int</span><span class="variabol"> myNum</span>[4];</p>
+    <p><span class="variabol"> myNum</span>[0]=10;</p>
+    <p><span class="variabol"> myNum</span>[1]=20;</p>
+    <p><span class="variabol"> myNum</span>[2]=30;</p>
+    <p><span class="variabol"> myNum</span>[3]=40;</p>
+    <p><span class="data_type ">int</span><span class="variabol"> myNum</span>[4];</p>
+    <p><span class="variabol"> cars</span>[0]="Volvo";</p>
+    <p><span class="variabol"> cars</span>[1]="BMW";</p>
+    <p><span class="variabol"> cars</span>[2]="Ford";</p>
+    <p>Array المصفوفات</p>
+    <p>Int مثال كامل مصفوفة نوع </p>
+    <p>واعطينا عدد العناصر 6 ومن ثم قمنا بتعبئة كل عنصر بقيمة ومن ثم قمنا بطباعة العناصر .Intفي هذا المثال عملنا مصفوفة من نوع صحيح </p>
+    <div class="code ">
+        <p>#<span class="data_type ">include</span>
+            <<span>iostream></p>
+        <p><span class="data_type ">using namespace</span><span class="std ">std</span>;</p>
+        <p><span class="data_type ">int</span> main(){</p>
+        <p><span class="data_type ">int</span><span class="variabol">ar</span>[6];</p>
+        <p><span class="variabol">ar</span>[0]=5</p>
+        <p><span class="variabol">ar</span>[1]=10</p>
+        <p><span class="variabol">ar</span>[2]=15</p>
+        <p><span class="variabol">ar</span>[3]=20</p>
+        <p><span class="variabol">ar</span>[4]=25</p>
+        <p><span class="variabol">ar</span>[5]=30</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="variabol">ar</span>[0]
+                << endl;</p>
+                    <p><span class="data_type ">Cout</span>
+                        <<<span class="variabol">ar</span>[1]
+                            << endl;</p>
+                                <p><span class="data_type ">Cout</span>
+                                    <<<span class="variabol">ar</span>[2]
+                                        << endl;</p>
+                                            <p><span class="data_type ">Cout</span>
+                                                <<<span class="variabol">ar</span>[3]
+                                                    << endl;</p>
+                                                        <p><span class="data_type ">Cout</span>
+                                                            <<<span class="variabol">ar</span>[4]
+                                                                << endl;</p>
+                                                                    <p><span class="data_type ">Cout</span>
+                                                                        <<<span class="variabol">ar</span>[5]
+                                                                            << endl;</p>
+                                                                                <p> Return 0;</p>
+                                                                                <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>5</p>
+        <p>10</p>
+        <p>15</p>
+        <p>20</p>
+        <p>25</p>
+        <p>30</p>
+    </div>
+    <p>Array المصفوفات</p>
+    <p>String مثال كامل مصفوفة نوع </p>
+    <div class="code">
+        <p><span class="data_type ">string</span><span class="variabol">Names</span>[3];</p>
+        <p><span class="variabol"> Names</span>[0]="Saif";</p>
+        <p><span class="variabol"> Names</span>[1]="omar";</p>
+        <p><span class="variabol"> Names</span>[2]="ramadan";</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="variabol">Names</span>[0]
+                << endl;</p>
+                    <p><span class="data_type ">Cout</span>
+                        <<<span class="variabol">Names</span>[1]
+                            << endl;</p>
+                                <p><span class="data_type ">Cout</span>
+                                    <<<span class="variabol">Names</span>[2]
+                                        << endl;</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Saif</p>
+        <p>omar</p>
+        <p>ramadan</p>
+    </div>
+    <p><span>for ال</span>طباعة المصفوفات بأستخدام </p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">ar</span>[6];</p>
+        <p><span class="variabol">ar</span>[0]=5</p>
+        <p><span class="variabol">ar</span>[1]=10</p>
+        <p><span class="variabol">ar</span>[2]=15</p>
+        <p><span class="variabol">ar</span>[3]=20</p>
+        <p><span class="variabol">ar</span>[4]=25</p>
+        <p><span class="variabol">ar</span>[5]=30</p>
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i</span>=0;<span class="variabol">i </span>
+            < 6;<span class="variabol">i</span>++)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="variabol">ar</span>[i]
+                        << endl;</p>
+                            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>5</p>
+        <p>10</p>
+        <p>15</p>
+        <p>20</p>
+        <p>25</p>
+        <p>30</p>
+    </div>
+    <p><span>for ال </span>طباعة المصفوفات بأستخدام </p>
+    <p>مثال ثاني</p>
+    <div class="code">
+        <p><span class="data_type ">string</span><span class="variabol">Names</span>[3];</p>
+        <p><span class="variabol"> Names</span>[0]="Saif";</p>
+        <p><span class="variabol"> Names</span>[1]="omar";</p>
+        <p><span class="variabol"> Names</span>[2]="ramadan";</p>
+        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i</span>=0;<span class="variabol">i </span>
+            < 3;<span class="variabol">i</span>++)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="variabol">Names</span>[i]
+                        << endl;</p>
+                            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>Saif</p>
+        <p>omar</p>
+        <p>ramadan</p>
+    </div>
+    <p><span>while ال </span>طباعة المصفوفات بأستخدام </p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol">ar</span>[6];</p>
+        <p><span class="variabol">ar</span>[0]=5</p>
+        <p><span class="variabol">ar</span>[1]=10</p>
+        <p><span class="variabol">ar</span>[2]=15</p>
+        <p><span class="variabol">ar</span>[3]=20</p>
+        <p><span class="variabol">ar</span>[4]=25</p>
+        <p><span class="variabol">ar</span>[5]=30</p>
+        <p><span class="data_type ">int</span><span class="variabol">i</span> =0;</p>
+        <p><span class="data_type ">while</span>(<span class="variabol">i</span>
+            < 6)</span>
+                <p>{</p>
+                <p><span class="data_type ">Cout</span>
+                    <<<span class="variabol">ar</span>[i]
+                        << endl;</p>
+                            <p><span class="variabol">i</span>++</p>
+                            <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+        <p>5</p>
+        <p>10</p>
+        <p>15</p>
+        <p>20</p>
+        <p>25</p>
+        <p>30</p>
+    </div>
+    <p><span>for ال </span>أدخال العناصر برمجيا بأستخدام </p>
+    <p> ومن داخل شاشة التنفيذ عن طريق المستخدم .<span>for ال </span>أدخال عناصر المصفوفة برمجيا بأستخدام </p>
+    <div class="code">
+        <p><span class="data_type ">int</span><span class="variabol"> ar</span>[6];</p>
+        <p><span class="data_type ">Cout</span>
+            <<<span class="text">"ادخال العناصر "</span>
+                << endl;</p>
+                    <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i</span>=0;<span class="variabol">i </span>
+                        < 6;<span class="variabol">i</span>++)</span>
+                            <p>{</p>
+                            <p><span class="data_type ">Cout</span>
+                                << <span class="text"> "Enter Element "</span>
+                                    <<<span class="variabol">i</span>
+                                        << "=";</p>
+                                            <p><span class="data_type ">cin</span> >> <span class="variabol">ar</span>[i];</p>
+                                            <p>}</p>
+                                            <p><span class="data_type ">Cout</span>
+                                                <<<span class="text">"طباعة العناصر "</span>
+                                                    << endl;</p>
+                                                        <p><span class="data_type ">for</span>(<span class="data_type ">int</span><span class="variabol"> i</span>=0;<span class="variabol">i </span>
+                                                            < 6;<span class="variabol">i</span>++)</span>
+                                                                <p>{</p>
+                                                                <p><span class="data_type ">Cout</span>
+                                                                    << <span class="text"> "ar "</span>
+                                                                        <<<span class="variabol">i</span>
+                                                                            << "="<<<span class="variabol">ar</span>[i]
+                                                                                << endl;</p>
+                                                                                    <p>}</p>
+    </div>
+    <p>Output :</p>
+    <div class="code ">
+
+        <p>ادخال العناصر</p>
+        <p>Enter Element 0=36</p>
+        <p>Enter Element 1=73</p>
+        <p>Enter Element 2=74</p>
+        <p>Enter Element 3=22</p>
+        <p>Enter Element 4=87</p>
+        <p>Enter Element 5=4</p>
+        <p>طباعة العناصر</p>
+        <p>Ar0=36</p>
+        <p>Ar1=73</p>
+        <p>Ar2=74</p>
+        <p>Ar3=22</p>
+        <p>Ar4=87</p>
+        <p>Ar5=4</p>
+    </div>
+</body>
+
+</html>
